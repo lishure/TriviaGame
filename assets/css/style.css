@@ -30,3 +30,13 @@ button {
 h3 {
     font-size: 50px;
 }
+
+.container {
+    padding-top: 50px;
+    float: center;
+    margin: 40px 80px 40px 160px;
+    width: 75%;
+    background-color: rgb(247, 247, 97);
+    text-align: center;
+}
+
