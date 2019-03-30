@@ -40,3 +40,7 @@ h3 {
     text-align: center;
 }
 
+.invisible{
+    display:none;
+}
+

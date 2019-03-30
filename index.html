@@ -12,88 +12,100 @@
 <body>
 
     <div class="jumbotron">
-        <h1>The Simpsons Trivia</h1>
-        <button id="start-button">
-            <h3>Start</h3>
-        </button>
+        <div id="first-page">
+            <h1>The Simpsons Trivia</h1>
+            <button id="start-button">
+                <h3>Start</h3>
+            </button>
+        </div>
     </div>
 
 
-    <div class="container" style=display:none>
-        <h3>Timer: <span class="timer">5</span></h3>
-
-        <p>
-            <h4>What is the name of the popular drink sold at the Kwik-E-Mart?</h4>
-        </p>
-        <label for="answer"><input type="radio" name="variable" value="0" />Slurpee</label>
-        <label for="answer"><input type="radio" name="variable" value="1" />Squishee</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Frappee</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Smoothie</label>
-        <p>
+    <div class="container invisible" >
+        <h3>Timer: <span class="timer">50</span></h3>
+        <form>
+                <h4>What is the name of the popular drink sold at the Kwik-E-Mart?</h4>
+            <label for="answer"><input type="radio" name="variable" value="0" />Slurpee</label>
+            <label for="answer"><input type="radio" name="variable" value="1" />Squishee</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Frappee</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Smoothie</label>
+        </form>
+        <form>
             <h4>Which Simpsons couple look like they may be related?</h4>
-        </p>
-        <label for="answer"><input type="radio" name="variable" value="0" />The Flanders</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />The Lovejoys</label>
-        <label for="answer"><input type="radio" name="variable" value="1" />The Van Houtens</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />The Burns</label>
-        <p>
+            <label for="answer"><input type="radio" name="variable" value="0" />The Flanders</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />The Lovejoys</label>
+            <label for="answer"><input type="radio" name="variable" value="1" />The Van Houtens</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />The Burns</label>
+        </form>
+        <form>
             <h4>Who shot Mr. Burns?</h4>
-        </p>
-        <label for="answer"><input type="radio" name="variable" value="0" />Smithers</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Nelson</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Homer</label>
-        <label for="answer"><input type="radio" name="variable" value="1" />Maggie</label>
-        <p>
+            <label for="answer"><input type="radio" name="variable" value="0" />Smithers</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Nelson</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Homer</label>
+            <label for="answer"><input type="radio" name="variable" value="1" />Maggie</label>
+        </form>
+        <form>
             <h4>What was the name of the secret organization that Homer was briefly a part of?</h4>
-        </p>
-        <label for="answer"><input type="radio" name="variable" value="1" />Stonecutters</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Beer Baron</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Bootleggers</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Hell's Angels</label>
-        <p>
+            <label for="answer"><input type="radio" name="variable" value="1" />Stonecutters</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Beer Baron</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Bootleggers</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Hell's Angels</label>
+        </form>
+        <form>
             <h4>What is the name of the main comicbook superhero?</h4>
-        </p>
-        <label for="answer"><input type="radio" name="variable" value="0" />Bumblebee Man</label>
-        <label for="answer"><input type="radio" name="variable" value="1" />Radioactive Man</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Stretch Dude</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Angry Dad</label>
-        <p>
+            <label for="answer"><input type="radio" name="variable" value="0" />Bumblebee Man</label>
+            <label for="answer"><input type="radio" name="variable" value="1" />Radioactive Man</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Stretch Dude</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Angry Dad</label>
+        </form>
+        <form>
             <h4>What's the name of Bart's bully?</h4>
-        </p>
-        <label for="answer"><input type="radio" name="variable" value="0" />Milhouse</label>
-        <label for="answer"><input type="radio" name="variable" value="1" />Nelson</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Ralph</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Tony</label>
-        <p>
+            <label for="answer"><input type="radio" name="variable" value="0" />Milhouse</label>
+            <label for="answer"><input type="radio" name="variable" value="1" />Nelson</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Ralph</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Tony</label>
+        </form>
+        <form>
             <h4>What is Lisa's favorite instrument?</h4>
-        </p>
-        <label for="answer"><input type="radio" name="variable" value="0" />Piano</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Flute</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Violin</label>
-        <label for="answer"><input type="radio" name="variable" value="1" />Saxophone</label>
-        <p>
+            <label for="answer"><input type="radio" name="variable" value="0" />Piano</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Flute</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Violin</label>
+            <label for="answer"><input type="radio" name="variable" value="1" />Saxophone</label>
+        </form>
+        <form>
             <h4>Who is the principal of Springfield Elementary?</h4>
-        </p>
-        <label for="answer"><input type="radio" name="variable" value="0" />Charmers</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Smithers</label>
-        <label for="answer"><input type="radio" name="variable" value="1" />Skinner</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Hoover</label>
-        <p>
+            <label for="answer"><input type="radio" name="variable" value="0" />Charmers</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Smithers</label>
+            <label for="answer"><input type="radio" name="variable" value="1" />Skinner</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />Hoover</label>
+        </form>
+        <form>
             <h4>What is Santa's Little Helper?</h4>
-        </p>
-        <label for="answer"><input type="radio" name="variable" value="1" />A dog</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />An elf</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />A cat</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />A hampster</label>
-        <p>
-            <h4>What is Homer's middle name?</h4>
-        </p>
-        <label for="answer"><input type="radio" name="variable" value="0" />Joe</label>
-        <label for="answer"><input type="radio" name="variable" value="1" />Jay</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />John</label>
-        <label for="answer"><input type="radio" name="variable" value="0" />Jean</label>
+            <label for="answer"><input type="radio" name="variable" value="1" />A dog</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />An elf</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />A cat</label>
+            <label for="answer"><input type="radio" name="variable" value="0" />A hampster</label>
+        </form>
+        <form>
+             <h4>What is Homer's middle name?</h4>
+                <label for="answer"><input type="radio" name="variable" value="0" />Joe</label>
+                <label for="answer"><input type="radio" name="variable" value="1" />Jay</label>
+                <label for="answer"><input type="radio" name="variable" value="0" />John</label>
+                <label for="answer"><input type="radio" name="variable" value="0" />Jean</label>
+        </form>
 
     </div>
+
+
+    <div class="jumbotron jumbotron-special invisible">
+            <div id="end-page">
+                <h2>Your Score</h2>
+                <p>Correct Answer: <span id="correct-answer">0</span></p>
+                <p>Incorrect Answer: <span id="wrong-answer">0</span></p>
+                <p>No Answer: <span id="no-answer">0</span></p>
+                
+            </div>
+        </div>
 
 
     <script src="assets/javascript/app.js"></script>

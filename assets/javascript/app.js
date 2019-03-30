@@ -5,8 +5,11 @@ var start = function () {
 }
 //Need to make array of variables
 var correct = 0;
+$("#correct-answer").text();
 var incorrect = 0;
+$("#wrong-answer").text();
 var unanswered = 0;
+$("#no-answer").text();
 var questions = "";
 var answer = "";
 //Need to make DOM variables
@@ -14,29 +17,37 @@ var startButton = document.getElementById("start-button");
 var newContainer = document.getElementsByClassName("container");
 var newJumbotron = document.getElementsByClassName("jumbotron");
 var newTimer = document.querySelector(".timer");
+var endPage = document.getElementsByClassName("jumbotron-special");
 
 //Make on click function using DOMS
-startButton.addEventListener("click", getNewContainer);
+startButton.addEventListener("click", getNewContainer)
 function getNewContainer() {
     var startTime = 5;
-    newContainer[0].style.display = "Initial";
-    newJumbotron[0].style.display = "none";
+    // newContainer[0].style.display = "Initial";
+    newContainer[0].classList.remove("invisible");
+
+    // newJumbotron[0].style.display = "none";
+    newJumbotron[0].classList.add("invisible");
+
     
     var timer = setInterval(function() {
         if (startTime === 1){
             clearInterval(timer);
-            newTimer.innerHTML = 5;
+            newTimer.innerHTML= "";
             //placeholder. need to create a third container
-            newJumbotron[0].style.display = "Initial";
+            //Make consistent. invisible/visible 
+            endPage[0].classList.remove("invisible");
+            newContainer[0].classList.add("invisible");
             
         };
         console.log(startTime -= 1);
         newTimer.innerHTML = startTime;
     }, 1000);
 };
-//Need to make an array of questions and answers? Maybe
 
-//Need to use hide/show/next function
+
+
+
 //Container is hidden in html, will use on click show function
 
 
