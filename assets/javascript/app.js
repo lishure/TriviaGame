@@ -5,11 +5,11 @@ var start = function () {
 }
 //Need to make array of variables
 var correct = 0;
-$("#correct-answer").text();
+//$("#correct-answer").text(correct); //This is for the correct count
 var incorrect = 0;
-$("#wrong-answer").text();
+//$("#wrong-answer").text(incorrect); //This is for the incorrect count
 var unanswered = 0;
-$("#no-answer").text();
+//$("#no-answer").text(unanswered); //This is for blank
 var questions = "";
 var answer = "";
 //Need to make DOM variables
