@@ -42,8 +42,8 @@ window.onload = function () {
 
     });
 
-    var startTime = 20;
-    // newContainer[0].style.display = "Initial";
+    var startTime = 30;
+    // newContainer[0].style.display = "Initial"; 
     newContainer.classList.remove("invisible");
 
     // newJumbotron[0].style.display = "none";

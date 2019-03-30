@@ -40,7 +40,11 @@ h3 {
     text-align: center;
 }
 
-.invisible{
+.invisible {
     display:none;
+}
+
+#end-page {
+    text-align: center;
 }
 
